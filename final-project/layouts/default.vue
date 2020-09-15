@@ -11,6 +11,7 @@
     <!--this causes the insersion of router content-->
         <router-view/>
     <!--footer here to appear on every page-->
+    
   </div>
 
 </template>

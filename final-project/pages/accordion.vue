@@ -35,23 +35,23 @@ export default {
   data () {
     return {
   //these are the variables that are places in the HTML sections that change based on conditional statements
-      header: 'Accordion',
-      subhead: 'Movie Quotes',
+      header: 'About Me',
+      subhead: 'Professional Background',
       contents: [
         {
           id: 1,
-          title: 'Back to the Future',
-          quote: 'How could I have been so careless. One point twenty-one gigawatts. Tom, how am I gonna generate that kind of power, it cant be done, it cant. It was meant to be. Anyway, if Grandpa hadnt hit him, then none of you would have been born. Go. Uh, plutonium, wait a minute, are you telling me that this suckers nuclear? Oh hey, Biff, hey, guys, how are you doing?.'
+          title: 'Marketing Experience',
+          quote: 'Managed a corporate Facebook account, updating content bi-weekly, to see monthly engagement rates increase one to two percent over a six month period. Contributed blog content. Utilized Mailchimp and Square to develop marketing materials and deploy an online retail store.'
         },
         {
         id: 2,
-        title: 'Back to the Future II',
-        quote: 'No. Our only chance to repair the present is in the past, at the point where the timeline skewed into this tangent. In order to put the universe back as we remember it and get back to our reality, we have to find out the exact date and specific circumstances of how, when, and where young Biff got his hands on that sports almanac.'
+        title: 'Executive Event Experience',
+        quote: 'Led all planning and execution of logistics for inaugural Sustainable Hospitality Developmentt Symposium from beginning to end in eight months. Managed volunteers for all community outreach events. Coordinated all aspects of Masters Week® hospitality house, with daily rotating guest list, in-house catering, restaurant reservations, transportation to and from all events, and personalized welcome gifts.'
         },
         {
         id: 3,
-        title: 'Back to the Future III',
-        quote: 'It means your future hasnt been written yet. No ones has. Your future is whatever you make it, so make it a good one. Both of you.'
+        title: 'Executive Admin Experience',
+        quote: 'Navigated all levels of contracting services witth vendors internally and externally. Maintained well-organized system for confidential files and financial records, ensuring 100% compliance with standardized requirements and federal policies.'
         },
 
       ],
