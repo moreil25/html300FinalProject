@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <!--add nav bar here-->
+    <!-- nav bar here-->
     <nav class="navbar navbar-expand-lg bg-dark m-3">
       <ul class="list-inline">
         <li class="list-inline-item"><nuxt-link to="home" class="nav-item text-success">Home</nuxt-link></li>
         <li class="list-inline-item"><nuxt-link to="images" class="nav-item text-danger">Images</nuxt-link></li>
-        <li class="list-inline-item"><nuxt-link to="accordion" class="nav-item text-warning">Accordion</nuxt-link></li>
+        <li class="list-inline-item"><nuxt-link to="accordion" class="nav-item text-warning">Professional</nuxt-link></li>
       </ul>
     </nav>
     <!--this causes the insersion of router content-->
-        <router-view/>
+        <!-- <router-view/> -->
     <!--footer here to appear on every page-->
-    
+
   </div>
 
 </template>
