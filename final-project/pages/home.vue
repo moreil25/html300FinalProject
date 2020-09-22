@@ -7,7 +7,7 @@ export default {
       showJumbotron: true,
       soon: 'Jumbotron Coming Soon!',
       subhead: 'Some Content',
-      content: 'Add some content here, then add the card section from Lesson 03',
+      content: 'Add some content here, then add the card section from Lesson 03 as component',
       notes: 'Add API here!'
     }
   }

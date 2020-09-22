@@ -28,7 +28,7 @@ export default {
   mixins: [borderOn],
   methods: {
     getPic(pic) {
-      return require(`@/images/${pic}`)
+      return require(`@/assets/${pic}`)
     }
   }
 }
