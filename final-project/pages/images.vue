@@ -1,5 +1,5 @@
 <script>
-import clickableImage from './clickableImage.vue';
+import clickableImage from '../components/clickableImage.vue';
 
 export default {
   components: {

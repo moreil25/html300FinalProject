@@ -1,0 +1,16 @@
+$font-family: Helvetica, sans-serif;
+
+$pink: #ab726b;
+$fuschia: #630134;
+$blue: #161535;
+$green: #1c3027;
+
+
+
+/* globally style colors, headers */
+
+//Mixin for responsive font size
+@mixin fontSize($size) {
+  font-size: $size * 1px;
+  font-size: $size * 0.1rem;
+}
