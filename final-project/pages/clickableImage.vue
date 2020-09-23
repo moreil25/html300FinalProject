@@ -3,7 +3,7 @@ The image component should have props for at least the image src, alt, & title a
 
 <script>
 //importing the mixin from its file
-import { borderOn } from './components/clickMixin.js';
+import { borderOn } from '../components/clickMixin.js';
 
 export default {
   name: 'clickableImage',
