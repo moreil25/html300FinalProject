@@ -1,5 +1,5 @@
 <script>
-import { sass } from '@/assets/css/styles.scss';
+
 
 export default {
   name: 'App',
@@ -30,10 +30,14 @@ export default {
 </template>
 
 <style lang="scss">
+@import './assets/css/styles.scss';
+
 html {
-  font-style: $font-family;
+  font-family: $font-family;
   color: $pink;
   background-color: $blue;
+}
+
 *,
 *::before,
 *::after {
@@ -69,4 +73,5 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
 </style>

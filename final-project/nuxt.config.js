@@ -29,8 +29,7 @@ export default {
   ** Global CSS
   */
   css: [
-    'sass',
-    '@/assets/css/main.css',
+    // 'sass',
     '@/assets/css/styles.scss'
   ],
   /*
