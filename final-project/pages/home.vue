@@ -16,7 +16,7 @@ export default {
 
 <template>
   <div>
-    <h1 class="display-1">{{ header }}</h1>
+    <h1 class="display-1 text-center">{{ header }}</h1>
       <div class="jumbotron" v-if="showJumbotron">
         <h2 class="display-3 text-center bg-secondary">Content</h2>
         <p class="font-weight-bold">{{ soon }}</p>

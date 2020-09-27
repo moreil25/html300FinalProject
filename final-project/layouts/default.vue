@@ -43,11 +43,18 @@ html {
   font-family: $font-family;
 }
 p {
-  color: $pink;
+  color: $green;
 }
 h1, h2, h3 {
   color: $fuschia;
 }
+body {
+  background-color: $pink;
+}
+.jumbotron {
+  background-color: $blue;
+}
+
 
 *,
 *::before,

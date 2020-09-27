@@ -1,35 +1,3 @@
-<template>
-  <div>
-    <h1 class="display-1">{{ header }}</h1>
-
-  <div>
-    <h2>{{ subhead }}</h2>
-
-<!--manual accordion to get it working THEN do iteration through blurbs-->
-<!--use aria-expanded to convey state of collapsable elements to screen readers and other assistive technology-->
-<!--each card groups together similar information-->
-
-  <div class="accordion" id="accordion">
-<!--v-for content on contets dynamic cards that will loop through data in array-->
-<!--used bootstrap-vue elements-->
-<!--key element is used to "hint" to the DOM to identify vnodes-->
-<!--use dot notation to access data, including id to generate a unique id for each item to be toggled-->
-  <b-card v-for="content in contents" v-bind:key="content.id" >
-    <b-card-header id="headingTwo">
-      <h3><b-button type="button" v-b-toggle="'content-' + content.id" aria-expanded="false" aria-controls="collapseTwo">{{ content.title }}</b-button>
-      </h3>
-    </b-card-header>
-    <b-collapse :id="'content-' + content.id" accordion="accordionOne" aria-labelledby="headingTwo">
-      <b-card-body>{{ content.quote }}</b-card-body>
-    </b-collapse>
-  </b-card>
-  </div>
-</div>
-</div>
-</template>
-
-
-
 <script>
 export default {
   data () {
@@ -61,3 +29,33 @@ export default {
   }
 
 </script>
+
+<template>
+  <div>
+    <h1 class="display-1 text-center">{{ header }}</h1>
+
+  <div>
+    <h2>{{ subhead }}</h2>
+
+<!--manual accordion to get it working THEN do iteration through blurbs-->
+<!--use aria-expanded to convey state of collapsable elements to screen readers and other assistive technology-->
+<!--each card groups together similar information-->
+
+  <div class="accordion" id="accordion">
+<!--v-for content on contets dynamic cards that will loop through data in array-->
+<!--used bootstrap-vue elements-->
+<!--key element is used to "hint" to the DOM to identify vnodes-->
+<!--use dot notation to access data, including id to generate a unique id for each item to be toggled-->
+  <b-card v-for="content in contents" v-bind:key="content.id" >
+    <b-card-header id="headingTwo">
+      <h3><b-button type="button" size="lg" pill variant="outline-secondary" v-b-toggle="'content-' + content.id" aria-expanded="false" aria-controls="collapseTwo">{{ content.title }}</b-button>
+      </h3>
+    </b-card-header>
+    <b-collapse :id="'content-' + content.id" accordion="accordionOne" aria-labelledby="headingTwo">
+      <b-card-body>{{ content.quote }}</b-card-body>
+    </b-collapse>
+  </b-card>
+  </div>
+</div>
+</div>
+</template>

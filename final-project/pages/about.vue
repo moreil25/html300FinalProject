@@ -16,15 +16,15 @@ export default {
 
 <template>
   <div>
-    <h1 class="display-1">{{ header }}</h1>
+    <h1 class="display-1 text-center">{{ header }}</h1>
       <div class="jumbotron" v-if="showJumbotron">
-        <h2 class="display-3 text-center bg-secondary">Content</h2>
+        <h2 class="display-3 text-center bg-secondary">Welcome</h2>
         <p class="font-weight-bold">{{ soon }}</p>
         <!-- v-on:click enables button to change content if clicked, otherwise content is shown due to != making it false-->
         <button v-on:click="showJumbotron = !showJumbotron">Show</button>
       </div>
       <div class="jumbotron" v-else="showJumbotron">
-        <h2 class="display-3 text-center bg-danger">Different Content</h2>
+        <h2 class="display-3 text-center bg-info">Still Here?</h2>
         <p class="font-weight-bold">{{ soon }}</p>
         <!-- v-on:click enables button to change content if clicked, otherwise content is shown due to != making it false-->
         <button v-on:click="showJumbotron = !showJumbotron">Show</button>
