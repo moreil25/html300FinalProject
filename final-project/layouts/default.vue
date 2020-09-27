@@ -1,6 +1,4 @@
 <script>
-
-
 export default {
   name: 'App',
   data () {
@@ -17,12 +15,14 @@ export default {
     <nav class="navbar navbar-expand-lg bg-dark m-3">
       <ul class="list-inline">
         <li class="list-inline-item"><nuxt-link to="/home" class="nav-item text-success">Home</nuxt-link></li>
-        <li class="list-inline-item"><nuxt-link to="images" class="nav-item text-danger">Images</nuxt-link></li>
         <li class="list-inline-item"><nuxt-link to="/accordion" class="nav-item text-warning">Professional</nuxt-link></li>
+        <li class="list-inline-item"><nuxt-link to="images" class="nav-item text-danger">Images</nuxt-link></li>
+        <li class="list-inline-item"><nuxt-link to="/about" class="nav-item text-info">About</nuxt-link></li>
+
       </ul>
     </nav>
 
-<!--footer here to appear on every page-->
+<!--footer here to appear on every page, add linked in and github-->
 
 <!--this causes the insersion of router content-->
     <Nuxt />
