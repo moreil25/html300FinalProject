@@ -4,7 +4,7 @@ export default {
     return {
   //these are the variables that are places in the HTML sections that change based on conditional statements
       header: 'About Me',
-      subhead: [
+      subheads: [
         {
           name: 'Professional Background'
         },
@@ -65,6 +65,7 @@ export default {
 <!--each card groups together similar information-->
 
   <div class="accordion" id="accordion">
+    <h2 v-for="subhead in subheaders" v-bind="subhead.name"></h2>
 <!--v-for content on contets dynamic cards that will loop through data in array-->
 <!--used bootstrap-vue elements-->
 <!--key element is used to "hint" to the DOM to identify vnodes-->
