@@ -5,8 +5,6 @@ export default {
   components: {
     clickableImage
   },
-
-
   data () {
     return {
   //these are the variables that are placed in the HTML sections that change based on conditional statements
@@ -49,6 +47,7 @@ export default {
 
 </script>
 
+<!--ADD TOOL TIPS ON IMAGES-->
 <template>
   <div>
     <h1 class="display-1 text-center">{{ header }}</h1>

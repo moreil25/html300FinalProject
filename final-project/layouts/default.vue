@@ -11,7 +11,7 @@ export default {
 
 <template>
   <div id="app">
-<!-- nav bar here-->
+<!-- nav bar here !!RESTYLE LINKS-->
     <nav class="navbar navbar-expand-lg bg-dark m-3">
       <ul class="list-inline">
         <li class="list-inline-item"><nuxt-link to="/home" class="nav-item text-success">Home</nuxt-link></li>
@@ -21,7 +21,7 @@ export default {
       </ul>
     </nav>
 
-<!--footer here to appear on every page, add linked in and github-->
+<!--footer here to appear on every page, add linked in and github !! NEED TO CHANGED FIXED POSITION-->
 
 <nav class="navbar fixed-bottom navbar-expand-lg bg-dark m-3">
   <ul class="list-inline">
@@ -43,16 +43,22 @@ html {
   font-family: $font-family;
 }
 p {
-  color: $green;
+  color: $turquoise;
 }
 h1, h2, h3 {
-  color: $fuschia;
+  color: $rust;
+}
+.header-two {
+  background-color: $teal;
+}
+.header-two-alt {
+  background-color: $turquoise;
 }
 body {
-  background-color: $pink;
+  background-color: $cream;
 }
 .jumbotron {
-  background-color: $blue;
+  background-color: $brick;
 }
 
 
@@ -62,7 +68,6 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
-
 .button--green {
   display: inline-block;
   border-radius: 4px;
@@ -71,12 +76,10 @@ body {
   text-decoration: none;
   padding: 10px 30px;
 }
-
 .button--green:hover {
   color: #fff;
   background-color: #3b8070;
 }
-
 .button--grey {
   display: inline-block;
   border-radius: 4px;
@@ -86,7 +89,6 @@ body {
   padding: 10px 30px;
   margin-left: 15px;
 }
-
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
