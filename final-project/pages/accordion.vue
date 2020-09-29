@@ -56,7 +56,7 @@ export default {
 
 <template>
   <div>
-    <h1 class="display-1 text-center">{{ header }}</h1>
+    <h1 class="display-1 text-center header neon">{{ header }}</h1>
   <div>
     <h2>{{ subhead }}</h2>
 
@@ -64,7 +64,7 @@ export default {
 <!--use aria-expanded to convey state of collapsable elements to screen readers and other assistive technology-->
 <!--each card groups together similar information-->
 
-  <div class="accordion" id="accordion">
+  <div class="accordion text-center" id="accordion">
     <h2 v-for="subhead in subheaders" v-bind="subhead.name"></h2>
 <!--v-for content on contets dynamic cards that will loop through data in array-->
 <!--used bootstrap-vue elements-->
@@ -81,7 +81,7 @@ export default {
   </b-card>
   </div>
 
-  <div class="accordion" id="accordionTwo">
+  <div class="accordion text-center" id="accordionTwo">
     <b-card v-for="experience in experiences" v-bind:key="experience.id" >
       <b-card-header id="headingTwo">
         <h3><b-button type="button" size="lg" pill variant="outline-secondary" v-b-toggle="'experience-' + experience.id" aria-expanded="false" aria-controls="collapseTwo">{{ experience.title }}</b-button>

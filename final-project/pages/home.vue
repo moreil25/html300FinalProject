@@ -7,7 +7,7 @@ export default {
       showJumbotron: true,
       soon: 'Jumbotron Coming Soon!',
       subhead: 'Some Content',
-      content: 'Add some content here',
+      content: 'Intro or ??',
       notes: 'My short term professional goal is to become a better a11y (ally) in implementing web accessibility. There are very easy things that businesses can do to open digital accessibility to more of their audience, and these changes aren’t solely reliant on the web development segment of their teams. As web development professionals, we can collaborate with our clients to begin to design products to better suit these needs, and in very simple ways, such as making sure color palettes include contrast ratios that maximize readability.'
     }
   }
@@ -16,7 +16,7 @@ export default {
 
 <template>
   <div>
-    <h1 class="display-1 text-center">{{ header }}</h1>
+    <h1 class="display-1 text-center header neon">{{ header }}</h1>
       <div class="jumbotron" v-if="showJumbotron">
         <h2 class="display-3 text-center header-two">Content</h2>
         <p class="font-weight-bold">{{ soon }}</p>

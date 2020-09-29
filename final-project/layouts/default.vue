@@ -1,3 +1,8 @@
+<!-- add API and deploy to netlify -->
+<!-- add skip to main content link -->
+<!-- continue to tweak colors for contrast ratio -->
+
+
 <script>
 export default {
   name: 'App',
@@ -11,23 +16,24 @@ export default {
 
 <template>
   <div id="app">
-<!-- nav bar here !!RESTYLE LINKS-->
-    <nav class="navbar navbar-expand-lg bg-dark m-3">
-      <ul class="list-inline">
-        <li class="list-inline-item"><nuxt-link to="/home" class="nav-item text-success">Home</nuxt-link></li>
-        <li class="list-inline-item"><nuxt-link to="/accordion" class="nav-item text-warning">Professional</nuxt-link></li>
-        <li class="list-inline-item"><nuxt-link to="images" class="nav-item text-danger">Images</nuxt-link></li>
-        <li class="list-inline-item"><nuxt-link to="/about" class="nav-item text-info">About</nuxt-link></li>
+<!-- nav bar here -->
+    <nav class="navbar navbar-expand-lg m-3">
+      <ul class=" text-center list-inline">
+        <li class="list-inline-item"><nuxt-link to="/home" class="nav-item">Home</nuxt-link></li>
+        <li class="list-inline-item"><nuxt-link to="/accordion" class="nav-item">Professional</nuxt-link></li>
+        <li class="list-inline-item"><nuxt-link to="images" class="nav-item">Images</nuxt-link></li>
+        <li class="list-inline-item"><nuxt-link to="/about" class="nav-item">About</nuxt-link></li>
       </ul>
     </nav>
 
+
 <!--footer here to appear on every page, add linked in and github !! NEED TO CHANGED FIXED POSITION-->
 
-<nav class="navbar fixed-bottom navbar-expand-lg bg-dark m-3">
+<nav class="navbar fixed-bottom navbar-expand-lg m-3">
   <ul class="list-inline">
-    <li class="list-inline-item"><nuxt-link to="/home" class="nav-item text-success">Home</nuxt-link></li>
-    <li class="list-inline-item"><a target="_blank" href="https://github.com/moreil25" class="nav-item text-warning">GitHub</a></li>
-    <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/merissaoreilly/" class="nav-item text-danger">LinkedIn</a></li>
+    <li class="list-inline-item"><nuxt-link to="/home" class="nav-item">Home</nuxt-link></li>
+    <li class="list-inline-item"><a target="_blank" href="https://github.com/moreil25" class="nav-item">GitHub</a></li>
+    <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/merissaoreilly/" class="nav-item">LinkedIn</a></li>
   </ul>
 </nav>
 
@@ -38,6 +44,7 @@ export default {
 
 <style lang="scss">
 @import './assets/css/styles.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Sacramento&display=swap');
 
 html {
   font-family: $font-family;
@@ -47,6 +54,10 @@ p {
 }
 h1, h2, h3 {
   color: $rust;
+}
+/*add background url? */
+.header{
+  font-family: $font-family-alt;
 }
 .header-two {
   background-color: $teal;
@@ -60,6 +71,32 @@ body {
 .jumbotron {
   background-color: $brick;
 }
+.accordion {
+  border: solid 2px gray;
+}
+a {
+  color: $cream;
+}
+a:hover {
+  text-decoration: none;
+  color: $teal;
+}
+nav {
+  background-color: $rust;
+}
+.neon {
+  color: $cream;
+  text-shadow:
+    0 0 5px $cream,
+    0 0 10px $cream,
+    0 0 20px $cream,
+    0 0 40px $turquoise,
+    0 0 80px $turquoise,
+    0 0 90px $turquoise,
+    0 0 100px $turquoise,
+    0 0 150px $turquoise;
+}
+
 
 
 *,

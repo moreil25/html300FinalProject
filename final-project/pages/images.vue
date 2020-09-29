@@ -50,7 +50,7 @@ export default {
 <!--ADD TOOL TIPS ON IMAGES-->
 <template>
   <div>
-    <h1 class="display-1 text-center">{{ header }}</h1>
+    <h1 class="display-1 text-center header neon">{{ header }}</h1>
       <div class="col-lg-12 wrapper">
 <!-- v-for will have to go in a wrapper for each image (i.e. div) and create props for components-->
     <!--v-for directive renders a list of items in array, imageOne in images loops through that array//:src function refers to method created to pull images from source directory//dot notation calls on key values in object-->
@@ -59,7 +59,8 @@ export default {
         v-bind:img="imageOne.img"
         v-bind:src="imageOne.src"
         v-bind:caption="imageOne.caption"
-        v-bind:alt="imageOne.alt">
+        v-bind:alt="imageOne.alt"
+        v-b-tooltip.hover title="Click to add a border!">
       </clickableImage>
     </div>
     </div>
