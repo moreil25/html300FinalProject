@@ -1,5 +1,10 @@
 <script>
+import getGoodreads from '../components/getGoodreads.vue';
+
 export default {
+  // components: [
+  //   'get-goodreads': getGoodreads
+  // ],
   data () {
     return {
       //these are the variables that are places in the HTML sections that change based on conditional statements
@@ -32,6 +37,9 @@ export default {
       <div>
         <h2 class="display-2">{{ subhead }}</h2>
         <p class="lead">{{ content }}</p>
+      </div>
+      <div>
+        <get-goodreads></get-goodreads>
       </div>
   </div>
 </template>

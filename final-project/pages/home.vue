@@ -8,7 +8,7 @@ export default {
       soon: 'Jumbotron Coming Soon!',
       subhead: 'Some Content',
       content: 'Intro or ??',
-      notes: 'My short term professional goal is to become a better a11y (ally) in implementing web accessibility. There are very easy things that businesses can do to open digital accessibility to more of their audience, and these changes aren’t solely reliant on the web development segment of their teams. As web development professionals, we can collaborate with our clients to begin to design products to better suit these needs, and in very simple ways, such as making sure color palettes include contrast ratios that maximize readability.'
+      notes: 'My short term professional goal is to become a better a11y (ally) in implementing web accessibility. There are very easy things that businesses can do to open digital accessibility to more of their audience, and these changes aren’t solely reliant on the web development segment of their teams. As web development professionals, we can collaborate with our clients to begin to design products to better suit these needs, and in very simple ways, such as making sure color palettes include contrast ratios that maximize readability. I also plan to become more proficient in ES6+ syntax.'
     }
   }
 }

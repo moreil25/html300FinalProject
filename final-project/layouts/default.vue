@@ -29,13 +29,13 @@ export default {
 
 <!--footer here to appear on every page, add linked in and github !! NEED TO CHANGED FIXED POSITION-->
 
-<nav class="navbar fixed-bottom navbar-expand-lg m-3">
+<!-- <nav class="navbar fixed-bottom navbar-expand-lg m-3">
   <ul class="list-inline">
     <li class="list-inline-item"><nuxt-link to="/home" class="nav-item">Home</nuxt-link></li>
     <li class="list-inline-item"><a target="_blank" href="https://github.com/moreil25" class="nav-item">GitHub</a></li>
     <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/merissaoreilly/" class="nav-item">LinkedIn</a></li>
   </ul>
-</nav>
+</nav> -->
 
 <!--this causes the insersion of router content-->
     <Nuxt />
