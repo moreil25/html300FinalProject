@@ -1,5 +1,6 @@
 <!-- API compares books with another goodreads member -->
 <script>
+const axios = require('axios');
   export default {
     data() {
       return {
@@ -8,8 +9,8 @@
         errored: false
       }
     },
+    //where do i use api key?
     mounted() {
-      //axios not defined error
       axios
       .get('https://www.goodreads.com/user/compare/1.xml')
       .then(response => (this.books) = response.data)
@@ -25,6 +26,8 @@
 <template>
   <div id="get-goodreads">
     <h1>Goodreads</h1>
-    <div class="single-goodreads"></div>
+    <div class="single-goodreads">
+      <!-- need an element to display data -->
+    </div>
   </div>
 </template>
