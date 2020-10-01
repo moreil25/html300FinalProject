@@ -60,7 +60,7 @@ export default {
         v-bind:src="imageOne.src"
         v-bind:caption="imageOne.caption"
         v-bind:alt="imageOne.alt"
-        v-b-tooltip.hover title="Click to add a border!">
+        v-b-tooltip.hover :title="imageOne.alt">
       </clickableImage>
     </div>
     </div>
