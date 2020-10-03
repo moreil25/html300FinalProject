@@ -47,7 +47,7 @@ export default {
 
 </script>
 
-<!--ADD TOOL TIPS ON IMAGES-->
+<!-- alt text appears as tool tip on each image using v-b-tooltip directive-->
 <template>
   <div>
     <h1 class="display-1 text-center header neon">{{ header }}</h1>

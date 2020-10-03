@@ -25,7 +25,7 @@ export default {
         <li class="list-inline-item"><nuxt-link to="/about" class="nav-item">About</nuxt-link></li>
       </ul>
     </nav>
-
+  <div class="header"></div>
 
 <!--footer here to appear on every page, add linked in and github !! NEED TO CHANGED FIXED POSITION-->
 
@@ -58,6 +58,7 @@ h1, h2, h3 {
 /*add background url? */
 .header{
   font-family: $font-family-alt;
+  background-image: url('../assets/ceiling.jpg');
 }
 .header-two {
   background-color: $teal;
@@ -85,11 +86,11 @@ nav {
   background-color: $rust;
 }
 .neon {
-  color: $cream;
+  color: #ffffff;
   text-shadow:
-    0 0 5px $cream,
-    0 0 10px $cream,
-    0 0 20px $cream,
+    0 0 5px #ffffff,
+    0 0 10px #ffffff,
+    0 0 20px #ffffff,
     0 0 40px $turquoise,
     0 0 80px $turquoise,
     0 0 90px $turquoise,
