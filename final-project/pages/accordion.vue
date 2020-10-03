@@ -83,18 +83,6 @@ export default {
     </b-collapse>
   </b-card>
   </div>
-
-  <div class="accordion text-center" id="accordionTwo">
-    <b-card v-for="experience in experiences" v-bind:key="experience.id" >
-      <b-card-header id="headingTwo">
-        <h3><b-button type="button" size="lg" pill variant="outline-secondary" v-b-toggle="'experience-' + experience.id" aria-expanded="false" aria-controls="collapseTwo">{{ experience.title }}</b-button>
-        </h3>
-      </b-card-header>
-      <b-collapse :id="'experience-' + experience.id" accordion="accordionTwo" aria-labelledby="headingTwo">
-        <b-card-body>{{ experience.quote }}</b-card-body>
-      </b-collapse>
-      </b-card>
-  </div>
 </div>
 </div>
 
