@@ -19,13 +19,16 @@ export default {
 
 <template>
   <div>
-    <h1 class="display-1 text-center header neon">{{ header }}</h1>
+    <h1 class="display-2 text-center header neon">{{ header }}</h1>
       <div>
-        <h2 class="display-2 text-center">{{ subhead }}</h2>
+        <h2 class="display-3">Why Front-End Web Development?</h2>
         <p class="lead">{{ content }}</p>
       </div>
-      <div class="display-3 text-center">
-        <get-etsy></get-etsy>
+      <div class="display-3 text-center wrapper">
+        <!-- v-for="listing in listings" in div, then component getEtsy with v-directives to render a list of items in array
+        <getEtsy>
+        v-bind="listing.info"
+        </geEtsy> -->
       </div>
   </div>
 </template>

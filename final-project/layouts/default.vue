@@ -21,8 +21,8 @@ export default {
       <ul class=" text-center list-inline">
         <li class="list-inline-item"><nuxt-link to="/home" class="nav-item">Home</nuxt-link></li>
         <li class="list-inline-item"><nuxt-link to="/accordion" class="nav-item">Professional</nuxt-link></li>
-        <li class="list-inline-item"><nuxt-link to="images" class="nav-item">Images</nuxt-link></li>
         <li class="list-inline-item"><nuxt-link to="/about" class="nav-item">About</nuxt-link></li>
+        <li class="list-inline-item"><nuxt-link to="images" class="nav-item">Images</nuxt-link></li>
       </ul>
     </nav>
   <div class="header"></div>

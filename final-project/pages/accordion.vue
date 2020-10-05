@@ -3,7 +3,7 @@ export default {
   data () {
     return {
   //these are the variables that are places in the HTML sections that change based on conditional statements
-      header: 'About Me',
+      header: 'Professional',
       subheads: [
         {
           name: 'Professional Background'

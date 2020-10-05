@@ -1,4 +1,4 @@
-<!-- API lists favorite Etsy shops -->
+<!-- API lists favorite Etsy shops BUT I need to find out what data is available to use -->
 <script>
 //const axios = require('axios');
   // export default {
