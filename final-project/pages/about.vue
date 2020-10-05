@@ -1,10 +1,10 @@
 <script>
-//import getEtsy from '../components/getEtsy.vue';
+import getEtsy from '../components/getEtsy.vue';
 
 export default {
-  // components: [
-  //   'get-etsy': getEtsy
-  // ],
+  components: [
+    getEtsy
+  ],
   data () {
     return {
       //these are the variables that are places in the HTML sections that change based on conditional statements
@@ -24,7 +24,8 @@ export default {
         <h2 class="display-3">Why Front-End Web Development?</h2>
         <p class="lead">{{ content }}</p>
       </div>
-      <div class="display-3 text-center wrapper">
+      <div class="wrapper">
+        <h2 class="display-3">Etsy API</h2>
         <!-- v-for="listing in listings" in div, then component getEtsy with v-directives to render a list of items in array
         <getEtsy>
         v-bind="listing.info"
