@@ -3,6 +3,7 @@
 <!-- continue to tweak colors for contrast ratio -->
 
 
+
 <script>
 export default {
   name: 'App',
@@ -16,26 +17,30 @@ export default {
 
 <template>
   <div id="app">
-<!-- nav bar here -->
-    <nav class="navbar navbar-expand-lg m-3">
-      <ul class=" text-center list-inline">
-        <li class="list-inline-item"><nuxt-link to="/home" class="nav-item">Home</nuxt-link></li>
-        <li class="list-inline-item"><nuxt-link to="/accordion" class="nav-item">Professional</nuxt-link></li>
-        <li class="list-inline-item"><nuxt-link to="/about" class="nav-item">About</nuxt-link></li>
-        <li class="list-inline-item"><nuxt-link to="images" class="nav-item">Images</nuxt-link></li>
-      </ul>
-    </nav>
+<!-- nav bar using Bootstrap Vue to include a dropdown section -->
+    <div class="menu">
+      <b-navbar toggleable="lg" type="dark">
+        <b-navbar-nav>
+          <b-nav-item><nuxt-link to="/home">Home</nuxt-link></b-nav-item>
+          <b-nav-item-dropdown text="About" right>
+            <b-dropdown-item><nuxt-link to="/accordion">Professional</nuxt-link></b-dropdown-item>
+            <b-dropdown-item><nuxt-link to="/about">About</nuxt-link></b-dropdown-item>
+          </b-nav-item-dropdown>
+          <b-nav-item><nuxt-link to="images">Images</nuxt-link></b-nav-item>
+        </b-navbar-nav>
+      </b-navbar>
+    </div>
   <div class="header"></div>
 
-<!--footer here to appear on every page, add linked in and github !! NEED TO CHANGED FIXED POSITION-->
-
-<!-- <nav class="navbar fixed-bottom navbar-expand-lg m-3">
-  <ul class="list-inline">
-    <li class="list-inline-item"><nuxt-link to="/home" class="nav-item">Home</nuxt-link></li>
-    <li class="list-inline-item"><a target="_blank" href="https://github.com/moreil25" class="nav-item">GitHub</a></li>
-    <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/merissaoreilly/" class="nav-item">LinkedIn</a></li>
-  </ul>
-</nav> -->
+<!--footer here to appear on every page, NEED TO CHANGE FIXED POSITION to make sticky footer???-->
+<div class="footer">
+  <b-navbar toggleable="lg" type="dark">
+    <b-navbar-nav>
+      <b-nav-item target="_blank" href="https://github.com/moreil25" class="nav-item">GitHub</b-nav-item>
+      <b-nav-item target="_blank" href="https://www.linkedin.com/in/merissaoreilly/" class="nav-item">LinkedIn</b-nav-item>
+    </b-navbar-nav>
+  </b-navbar>
+</div>
 
 <!--this causes the insersion of router content-->
     <Nuxt />
