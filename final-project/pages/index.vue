@@ -31,7 +31,34 @@
 </template>
 
 <script>
-export default {}
+import axios from 'axios';
+
+export default {
+  components: {
+    getEtsy
+  },
+      data() {
+        return {
+          loading: true,
+          listings: null,
+          errored: false
+        }
+      },
+      //where do i use api key? in the url  6kutd3kmmvov61bbwo41jzx3  /users/Merissa/favorites/listings
+  //.get, .then, .catch, and .finally are methods chained together to handle results and errors
+  //should this part be in index.vue?
+      mounted() {
+        axios
+        .get('https://openapi.etsy.com/v2/users/Merissa/favorites/listings.js?api_key=6kutd3kmmvov61bbwo41jzx3')
+        .then(response => console.log(response))
+        .catch(error => {
+          console.log(error)
+          this.errored = true
+        })
+        .finally(() => this.loading = false)
+      }
+    }
+}
 </script>
 
 <style>

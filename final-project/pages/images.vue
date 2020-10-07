@@ -1,3 +1,5 @@
+<!--would like to revisit this project and implement carousel-->
+
 <script>
 import clickableImage from '../components/clickableImage.vue';
 

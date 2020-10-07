@@ -1,6 +1,7 @@
 <!-- add API and deploy to netlify -->
 <!-- add skip to main content link -->
 <!-- continue to tweak colors for contrast ratio -->
+<!-- use a popover somewhere? -->
 
 
 
