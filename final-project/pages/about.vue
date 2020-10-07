@@ -29,7 +29,11 @@ export default {
         <!-- v-for="listing in listings" in div, then component getEtsy with v-directives to render a list of items in array
         <getEtsy>
         v-bind="listing.info" -->
-      <!-- <getEtsy>WOULD I USE THIS LIKE THE clickableImage tag in lesson08? and use v0bind/v-for to loop through array of data?</getEtsy> -->
+<!--   <getEtsy
+            v-for="listing of listings"
+            :key="listing.id"
+            :listing="listing"
+              /> -->
       </div>
   </div>
 </template>

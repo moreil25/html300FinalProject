@@ -32,6 +32,7 @@
 
 <script>
 import axios from 'axios';
+import getEtsy from '../components/getEtsy.vue';
 
 export default {
   components: {
@@ -50,7 +51,7 @@ export default {
       mounted() {
         axios
         .get('https://openapi.etsy.com/v2/users/Merissa/favorites/listings.js?api_key=6kutd3kmmvov61bbwo41jzx3')
-        .then(response => console.log(response))
+        .then(response => this.listings = response.data)
         .catch(error => {
           console.log(error)
           this.errored = true
@@ -58,7 +59,7 @@ export default {
         .finally(() => this.loading = false)
       }
     }
-}
+
 </script>
 
 <style>
