@@ -25,7 +25,7 @@ export default {
   mounted() {
   console.log('mounted function started');
   axios
-  .get('https://openapi.etsy.com/v2/users/Merissa/favorites/listings.json?api_key=6kutd3kmmvov61bbwo41jzx3')
+  .get('https://openapi.etsy.com/v2/users/r6g3usxn/favorites/listings.json?api_key=6kutd3kmmvov61bbwo41jzx3')
   .then((response) => {
     // const data = JSON.parse(response.data)
     console.log(response.data.results); this.listings = response.data.results}
@@ -48,15 +48,17 @@ export default {
       </div>
       <div class="wrapper">
         <h2 class="display-3">Etsy API</h2>
+      <div v-if="listings !== null">
         <p>{{ listings[0].listing_id }}</p>
         <!-- v-for="listing in listings" in div, then component getEtsy with v-directives to render a list of items in array
         <getEtsy>
         v-bind="listing.info" -->
-<!--   <getEtsy
-            v-for="listing of listings"
-            :key="listing.id"
+    <getEtsy
+            v-for="listing in listings"
+            :key="listing.listing_id"
             :listing="listing"
-              /> -->
+              />
       </div>
   </div>
+</div>
 </template>

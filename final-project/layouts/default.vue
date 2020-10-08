@@ -33,24 +33,26 @@ export default {
     </div>
   <div class="header"></div>
 
-<!--footer here to appear on every page, NEED TO CHANGE FIXED POSITION to make sticky footer???-->
-<div class="footer">
-  <b-navbar toggleable="lg" type="dark">
-    <b-navbar-nav>
-      <b-nav-item target="_blank" href="https://github.com/moreil25" class="nav-item">GitHub</b-nav-item>
-      <b-nav-item target="_blank" href="https://www.linkedin.com/in/merissaoreilly/" class="nav-item">LinkedIn</b-nav-item>
-    </b-navbar-nav>
-  </b-navbar>
-</div>
+
 
 <!--this causes the insersion of router content-->
     <Nuxt />
+    <!--footer here to appear on every page, NEED TO CHANGE FIXED POSITION to make sticky footer???-->
+    <div class="footer">
+      <b-navbar toggleable="lg" type="dark">
+        <b-navbar-nav>
+          <b-nav-item target="_blank" href="https://github.com/moreil25" class="nav-item">GitHub</b-nav-item>
+          <b-nav-item target="_blank" href="https://www.linkedin.com/in/merissaoreilly/" class="nav-item">LinkedIn</b-nav-item>
+        </b-navbar-nav>
+      </b-navbar>
+    </div>
   </div>
 </template>
 
 <style lang="scss">
 @import './assets/css/styles.scss';
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Sacramento&display=swap');
+/*main body content needs to have bottom margin same height as footer, set footer height manually in CSS*/
 
 html {
   font-family: $font-family;
