@@ -24,7 +24,7 @@ export default {
         <button v-on:click="showJumbotron = !showJumbotron">Show</button>
       </div>
       <div class="jumbotron" v-else="showJumbotron">
-        <h2 class="display-3 text-center header-two-alt">Always Improving!</h2>
+        <h2 class="display-3 text-center header-two-alt">Updates Coming Soon</h2>
         <p class="font-weight-bold text-center">{{ soon }}</p>
         <!-- v-on:click enables button to change content if clicked, otherwise content is shown due to != making it false-->
         <button v-on:click="showJumbotron = !showJumbotron">Show</button>

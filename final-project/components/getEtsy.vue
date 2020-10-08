@@ -5,11 +5,6 @@
       listing: Object
     },
     data() {
-      return {
-        loading: true,
-        listings: null,
-        errored: false
-      }
     },
   }
 //     where do i use api key? in the url  6kutd3kmmvov61bbwo41jzx3  /users/Merissa/favorites/listings

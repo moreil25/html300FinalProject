@@ -27,7 +27,7 @@ export default {
             <b-dropdown-item><nuxt-link to="/accordion">Professional</nuxt-link></b-dropdown-item>
             <b-dropdown-item><nuxt-link to="/about">About</nuxt-link></b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item><nuxt-link to="images">Images</nuxt-link></b-nav-item>
+          <b-nav-item><nuxt-link to="/images">Images</nuxt-link></b-nav-item>
         </b-navbar-nav>
       </b-navbar>
     </div>
