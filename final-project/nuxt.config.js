@@ -55,6 +55,15 @@ export default {
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
   ],
+  // generate: {
+  //   routes: [
+  //     '/home/',
+  //     '/about',
+  //     '/accordion/',
+  //     '/images/'
+  //   ]
+
+  }
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
