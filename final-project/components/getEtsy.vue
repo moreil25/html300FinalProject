@@ -1,24 +1,34 @@
-<!-- API lists favorite Etsy shops BUT I need to find out what data is available to use -->
+<!-- API lists favorited Etsy listings -->
 <script>
   export default {
     props: {
       listing: Object
     },
   }
-//     where do i use api key? in the url  6kutd3kmmvov61bbwo41jzx3  /users/Merissa/favorites/listings
-
-
 </script>
 
 <template>
+
   <div id="get-etsy">
-    <h1>Etsy</h1>
-    <section class="card" v-if="listing.listing_state == 'active'">
+    <b-card title="Listing" sub-title="Favorites">
+      <b-card-text>
+        These listings show that the item is still actively available for purchase, as well as the dates they were created</b-card-text>
+        <b-card-text>{{ listing.listing_state }} {{ listing.create_date }}
+      </b-card-text>
+
+      <a :href="`https://www.etsy.com/listing/${listing.listing_id}`">View Listing</a>
+    </b-card>
+  </div>
+  <!-- <div id="get-etsy"> -->
+    <!-- v-if loops through favorited listings and displays ones that have active state -->
+    <!-- <section class="card" v-if="listing.listing_state == 'active'"> -->
+      <!-- <h2 class="card__title">{{ listing.name }}</h2> -->
       <!-- USE AS DEBUGGING TOOL <p>{{ listing }}</p> -->
-      <a :href="`https://www.etsy.com/listing/${listing.listing_id}`">CLICK</a>
-      <h2 class="card__title">{{ listing.name }}</h2>
-      <p class="card__copy">{{ listing.listing_state }}</p>
+      <!-- <a :href="`https://www.etsy.com/listing/${listing.listing_id}`">CLICK</a>
+
+      <p class="card__copy">{{ listing.listing_state }} {{ listing.create_date }}</p> -->
+
       <!--print out a link if it's still active, or date listing was saved -->
-    </section>
-    </div>
+    <!-- </section>
+    </div> -->
 </template>
