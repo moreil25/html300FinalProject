@@ -49,6 +49,7 @@ export default {
       </div>
       <div class="wrapper">
         <h2 class="display-3">These Are a Few of My Favorite Things</h2>
+        <p class="lead">I hope you enjoy these Etsy listings that inspire me!</p>
         <!-- v-if lets us know that if the listings array is returned null, we do not want to dislpay  anything -->
       <div v-if="listings !== null">
         <!-- v-for="listing in listings" in div, then component getEtsy with v-directives to render a list of items in array -->
