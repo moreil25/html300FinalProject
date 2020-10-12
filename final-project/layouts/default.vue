@@ -106,7 +106,15 @@ nav {
     0 0 150px $turquoise;
 }
 
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
 
+.hidden:focus {
+  left: 0;
+}
 *,
 *::before,
 *::after {

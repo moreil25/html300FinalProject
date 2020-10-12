@@ -31,7 +31,8 @@ export default {
         <!-- v-on:click enables button to change content if clicked, otherwise content is shown due to != making it false-->
         <button v-on:click="showJumbotron = !showJumbotron">Show</button>
       </div>
-      <div class="">
+      <div>
+        <a href="#main-content" class="hidden">Skip to main content!!</a>
         <h2 class="display-4">Merissa O'Reilly</h2>
         <p class="lead">{{ content }}</p>
         <p class="lead">{{ contentTwo }}</p>

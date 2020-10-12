@@ -44,6 +44,7 @@ export default {
   <div>
     <h1 class="display-1 text-center header neon">{{ header }}</h1>
       <div>
+        <a href="#main-content" class="hidden">Skip to main content!!</a>
         <h2 class="display-3">Why Front-End Web Development?</h2>
         <p class="lead">{{ content }}</p>
       </div>
