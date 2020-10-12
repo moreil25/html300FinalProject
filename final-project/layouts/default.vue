@@ -1,10 +1,3 @@
-<!-- add API and deploy to netlify -->
-<!-- add skip to main content link -->
-<!-- continue to tweak colors for contrast ratio -->
-<!-- use a popover somewhere? -->
-
-
-
 <script>
 export default {
   name: 'App',
@@ -72,7 +65,8 @@ h1, h2, h3 {
   background-color: $teal;
 }
 .header-two-alt {
-  background-color: $turquoise;
+  color: $cream;
+  background-color: $rust;
 }
 body {
   background-color: $cream;
