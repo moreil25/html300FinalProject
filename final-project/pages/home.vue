@@ -10,10 +10,23 @@ export default {
       content: 'Experienced community and hospitality management strategist with expertise in community outreach, event coordination, professional writing and editing, and corporate marketing strategies. Works well with a team in an open concept office, individually as a self-starter, and resilient to workplace changes',
       contentTwo: 'Professional growth-seeker, strategic thinker, and unabashed user of Oxford commas',
       notes: 'Continue to be a better a11y (ally) in implementing web accessibility',
-      notesTwo: 'Foster self-leaerning in imporving in ES6+ syntax'
+      notesTwo: 'Foster self-learning to improve use of ES6+ syntax'
     }
-  }
+  },
+  head() {
+      return {
+        title: this.header,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Merissas custom portfolio'
+          }
+        ]
+      }
+    }
 }
+
 </script>
 
 <template>
