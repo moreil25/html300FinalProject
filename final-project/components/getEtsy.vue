@@ -15,6 +15,10 @@
         <b-card-text>{{ listing.listing_state }} {{ listing.create_date }}
       </b-card-text>
 
+      <!-- would I need to create variables in the script tag or can i just use dot notation in the {{}} since  that indicates a variable in Vue? 
+      var d = new Date();
+      var n = d.toJSON(); -->
+
       <a :href="`https://www.etsy.com/listing/${listing.listing_id}`">View Listing</a>
     </b-card>
   </div>
