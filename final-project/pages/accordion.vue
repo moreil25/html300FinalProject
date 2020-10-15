@@ -51,6 +51,18 @@ export default {
         tip: 'Volunteer experience'
       },
       ],
+    }
+  },
+  head() {
+      return {
+        title: this.header,
+        meta: [
+          {
+            hid: 'professional',
+            name: 'experience',
+            content: 'experience in professional positions'
+          }
+        ]
       }
     }
   }

@@ -36,6 +36,18 @@ export default {
     this.errored = true
   })
   .finally(() => {console.log('done'); this.loading = false})
+},
+head() {
+    return {
+      title: this.header,
+      meta: [
+        {
+          hid: 'about',
+          name: 'about me',
+          content: 'more about me'
+        }
+      ]
+    }
   }
   }
 </script>

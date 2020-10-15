@@ -44,7 +44,19 @@ export default {
         }
       ]
     }
-  }
+  },
+  head() {
+      return {
+        title: this.header,
+        meta: [
+          {
+            hid: 'images',
+            name: 'images',
+            content: 'custom images curated by me'
+          }
+        ]
+      }
+    }
 }
 
 </script>
