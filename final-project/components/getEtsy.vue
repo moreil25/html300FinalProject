@@ -12,10 +12,11 @@
     <b-card title="Listing" sub-title="My Favorites">
       <b-card-text>
         These listings show that the item is still actively available for purchase, as well as the dates they were created</b-card-text>
-        <b-card-text>{{ listing.listing_state }} {{ listing.create_date }}
+        <b-card-text>{{ listing.listing_state }}
       </b-card-text>
 
-      <!-- would I need to create variables in the script tag or can i just use dot notation in the {{}} since  that indicates a variable in Vue?
+      <!-- To add the listing created date as a human readable item, would I need to create variables in the script tag or can i just use dot notation in the {{}} since  that indicates a variable in Vue?
+      {{ listing.create_date }}
       var d = new Date();
       var n = d.toJSON(); -->
 
