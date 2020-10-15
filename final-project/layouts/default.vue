@@ -5,7 +5,19 @@ export default {
     return {
       msg: 'Hello'
     }
-  }
+  },
+  head() {
+      return {
+        title: this.header,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Merissas custom portfolio'
+          }
+        ]
+      }
+    }
 }
 </script>
 

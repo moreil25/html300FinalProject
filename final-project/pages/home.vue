@@ -13,18 +13,7 @@ export default {
       notesTwo: 'Foster self-learning to improve use of ES6+ syntax'
     }
   },
-  head() {
-      return {
-        title: this.header,
-        meta: [
-          {
-            hid: 'description',
-            name: 'description',
-            content: 'Merissas custom portfolio'
-          }
-        ]
-      }
-    }
+
 }
 
 </script>
