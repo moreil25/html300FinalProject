@@ -16,7 +16,7 @@ export default {
           img: 'Cross Stitch',
           src: 'xstitch2.jpg',
           caption: 'Cross Stitch Flat Lay',
-          alt: 'Flat lay image of cross stitch, Kindle ereader, cup of tea'
+          alt: 'Flat lay image of several cross stitch pieces'
         },
         {
           img: 'Lions',
