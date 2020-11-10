@@ -16,12 +16,12 @@ export default {
     <div class="menu">
       <b-navbar toggleable="lg" type="dark">
         <b-navbar-nav>
-          <b-nav-item><nuxt-link to="/home">Home</nuxt-link></b-nav-item>
+          <b-nav-item to="/home">Home</b-nav-item>
           <b-nav-item-dropdown text="About" right>
-            <b-dropdown-item><nuxt-link to="/accordion">Professional</nuxt-link></b-dropdown-item>
-            <b-dropdown-item><nuxt-link to="/about">About</nuxt-link></b-dropdown-item>
+            <b-dropdown-item to="/accordion">Professional</b-dropdown-item>
+            <b-dropdown-item to="/about">About</b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item><nuxt-link to="/images">Images</nuxt-link></b-nav-item>
+          <b-nav-item to="/images">Images</b-nav-item>
         </b-navbar-nav>
       </b-navbar>
     </div>
