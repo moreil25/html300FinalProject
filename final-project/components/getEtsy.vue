@@ -8,7 +8,7 @@
 </script>
 
 <template>
-  <div id="get-etsy">
+ <!-- <div id="get-etsy">
     <b-card title="Listing" sub-title="My Favorites">
       <b-card-text>
         These listings show that the item is still actively available for purchase, as well as the dates they were created</b-card-text>
@@ -22,4 +22,4 @@
 
       <a :href="`https://www.etsy.com/listing/${listing.listing_id}`">View Listing</a>
     </b-card>
-  </div>
+  </div> -->
